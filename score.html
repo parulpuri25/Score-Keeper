@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper Application</title>
+    <link rel="stylesheet" href="score.css">
+</head>
+<h1>Welcome to Score Board</h1>
+<div class="container">
+    <img src="pingPong.avif" alt="Ping Pong Image">
+    <span id="info">Ping Pong Score Keeper</span>
+    <div class="board">
+        <div class="scores">
+            <p class="winner">Our Winner is: </p>
+            <span id="score1">0</span>
+            <span>to</span>
+            <span id="score2">0</span>
+        </div>
+        <p>Use the buttons below to keep score</p>
+        <label for="scoreMax" id="label">Playing upto</label>
+        <select name="scoreMax" id="scoreMax">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7" selected>7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <div class="buttons">
+            <button type="button" id="playerOne">Player One</button>
+            <button type="button" id="playerTwo">Player Two</button>
+            <button type="button" id="reset">Reset</button>
+        </div>
+        <div class="names">
+            <label for="name1">Enter your name Player 1</label>
+            <input type="text" id="name1">
+            <label for="name2">Enter your name Player 2</label>
+            <input type="text" id="name2">
+            <button id="save">Save</button>
+        </div>
+    </div>
+</div>
+
+<body>
+    <script src="score.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.container img {
+    height: 350px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.container #info {
+    padding: 15px 0;
+    font-weight: bold;
+    color: black;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+
+.board {
+    padding: 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.board .scores {
+    margin-top: 16px;
+    font-weight: bold;
+}
+
+.board #label {
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+}
+
+.board .buttons {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.board button {
+    flex-grow: 1;
+    padding: 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.board .buttons #playerOne {
+    background-color: lightgreen;
+}
+
+.board .buttons #playerTwo {
+    background-color: lightblue;
+}
+
+.board .buttons #reset {
+    background-color: red;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.names label {
+    margin-top: 3px;
+    font-weight: bolder;
+}
+
+.names input {
+    text-align: center;
+    margin-top: 10px;
+    width: 200px;
+    margin: 10px;
+    padding: 8px 10px;
+    box-sizing: border-box;
+}
+
+.names button {
+    margin-top: 10px;
+    background-color: aqua;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.display {
+    display: none;
+}
